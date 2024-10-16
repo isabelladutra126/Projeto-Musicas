@@ -1,0 +1,23 @@
+.sidenav {
+    background-color: black;
+    width: 150px;
+}
+
+.sidenav a{
+    color: white;
+    padding-left: 3px;
+}
+
+.sidenav i {
+    padding-left: 15px;
+}
+
+.content {
+    padding: 15px;
+    background-color: white;
+}
+
+.nav-list i {
+    padding-left: 10px;
+} 
+

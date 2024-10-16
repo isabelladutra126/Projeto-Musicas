@@ -1,0 +1,22 @@
+{
+    "musicas":[
+        {
+            "nome": "one",
+            "autor": "metallica",
+            "genero": "rock",
+            "ano": 2003
+        },
+        {
+            "nome": "nothing else matters",
+            "autor": "metallica",
+            "genero": "rock",
+            "ano": 2005
+        },
+        {
+            "nome": "enter sandman",
+            "autor": "metallica",
+            "genero": "rock",
+            "ano": 2007
+        }
+    ]
+}
