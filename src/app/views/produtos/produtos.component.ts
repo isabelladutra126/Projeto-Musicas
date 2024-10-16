@@ -10,9 +10,7 @@ import { MusicCreateComponent } from '../../components/music-create/music-create
 export class ProdutosComponent implements OnInit {
 
   
-  constructor(private router: Router) {
-
-   }
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
   }
