@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MusicService } from 'src/app/service/musiccreate/music.service';
 import { Router } from '@angular/router';
+import { Music } from '../music.model';
 
 
 @Component({
@@ -10,6 +11,13 @@ import { Router } from '@angular/router';
 })
 export class MusicCreateComponent implements OnInit {
 
+  music: Music = {
+    nome: '',
+    autor: '',
+    genero: '',
+    ano:  null,
+  }
+
   constructor(private musicService: MusicService, private router: Router) { }
 
   ngOnInit(): void {
@@ -18,10 +26,13 @@ export class MusicCreateComponent implements OnInit {
 
   createMusic(): void 
   {
+    this.musicService.create(this.music).subscribe(() => {
     this.musicService.showMsg('Música adicionada com sucesso!')
+    this.router.navigate(['/produtos'])
+  })
   }
 
-  cancelMusic(): void {
+  cancel(): void {
     this.router.navigate(['/produtos'])
   }
 }

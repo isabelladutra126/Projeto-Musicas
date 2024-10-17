@@ -1,6 +1,17 @@
+a{
+    color: #ffffff
+}
+
 .header{
     display: flex;
     align-items: center;
+    background-color: #272526;
+
+}
+.header a i{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
 
 }
 

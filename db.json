@@ -1,25 +1,46 @@
 {
-    "musicas":[
-        {
-            "id": 1,
-            "nome": "one",
-            "autor": "metallica",
-            "genero": "rock",
-            "ano": 2003
-        },
-        {
-            "id": 2,
-            "nome": "nothing else matters",
-            "autor": "metallica",
-            "genero": "rock",
-            "ano": 2005
-        },
-        {
-            "id": 3,
-            "nome": "enter sandman",
-            "autor": "metallica",
-            "genero": "rock",
-            "ano": 2007
-        }
-    ]
+  "musicas": [
+    {
+      "id": "1",
+      "nome": "one",
+      "autor": "metallica",
+      "genero": "rock",
+      "ano": 2003
+    },
+    {
+      "id": "2",
+      "nome": "nothing else matters",
+      "autor": "metallica",
+      "genero": "rock",
+      "ano": 2005
+    },
+    {
+      "id": "3",
+      "nome": "enter sandman",
+      "autor": "metallica",
+      "genero": "rock",
+      "ano": 2007
+    },
+    {
+      "id": "3f6b",
+      "nome": "",
+      "autor": "",
+      "genero": "",
+      "ano": null
+    },
+    {
+      "id": "d347",
+      "nome": "",
+      "autor": "",
+      "genero": "",
+      "ano": null
+    },
+    {
+      "id": "1c22",
+      "nome": "",
+      "autor": "",
+      "genero": "",
+      "ano": null
+    }
+  ]
 }
