@@ -1,0 +1,36 @@
+*{
+    color:rgb(255, 255, 255)
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #333;
+    color: white;
+  }
+
+  td {
+    background-color: #444;
+    color: white;
+  }
+  td:nth-child(3) {
+    padding-right: 50px;
+  }
+
+  i.edit{
+    color:  #c96d7a;
+  }
+
+  i.delete{
+    color:  #c96d7a;
+  }
+  
+

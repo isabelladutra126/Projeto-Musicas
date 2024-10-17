@@ -1,46 +1,25 @@
 {
   "musicas": [
     {
-      "id": "1",
-      "nome": "one",
-      "autor": "metallica",
+      "id": "5fc6",
+      "nome": "Buried Alive",
+      "autor": "Avenged Sevenfold",
       "genero": "rock",
-      "ano": 2003
+      "link": "https://www.youtube.com/watch?v=imwmmv9r1oE"
     },
     {
-      "id": "2",
-      "nome": "nothing else matters",
-      "autor": "metallica",
-      "genero": "rock",
-      "ano": 2005
+      "id": "",
+      "nome": "Master of Puppets",
+      "autor": "Metallica",
+      "genero": "Rock",
+      "link": "https://www.youtube.com/watch?v=E0ozmU9cJDg"
     },
     {
-      "id": "3",
-      "nome": "enter sandman",
-      "autor": "metallica",
-      "genero": "rock",
-      "ano": 2007
-    },
-    {
-      "id": "3f6b",
-      "nome": "",
-      "autor": "",
-      "genero": "",
-      "ano": null
-    },
-    {
-      "id": "d347",
-      "nome": "",
-      "autor": "",
-      "genero": "",
-      "ano": null
-    },
-    {
-      "id": "1c22",
-      "nome": "",
-      "autor": "",
-      "genero": "",
-      "ano": null
+      "id": "",
+      "nome": "JUST LIKE YOU",
+      "autor": "THREE DAYS GRACE",
+      "genero": "ROCK",
+      "link": "https://www.youtube.com/watch?v=04fQTmvFfGo"
     }
   ]
 }

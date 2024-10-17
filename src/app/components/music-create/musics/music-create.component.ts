@@ -12,10 +12,11 @@ import { Music } from '../music.model';
 export class MusicCreateComponent implements OnInit {
 
   music: Music = {
+    id: '',
     nome: '',
     autor: '',
     genero: '',
-    ano:  null,
+    link:  '',
   }
 
   constructor(private musicService: MusicService, private router: Router) { }

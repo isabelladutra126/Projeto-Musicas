@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +18,19 @@ import { MatButtonModule } from '@angular/material/button';
 import { MusicCreateComponent } from './components/music-create/musics/music-create.component';
 import { HttpClientModule } from '@angular/common/http';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule, NgModel } from '@angular/forms';
+import { MusicReadComponent } from './components/music-read/music-read.component';
+import { Productread2Component } from './components/productread2/productread2.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { CapitalizeWordsPipe } from './capitalize-words.pipe';
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -30,6 +43,9 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     RedDirective,
     ForDirective,
     MusicCreateComponent,
+    MusicReadComponent,
+    Productread2Component,
+    CapitalizeWordsPipe
   ],
   imports: [
     BrowserModule,
@@ -41,9 +57,14 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     MatCardModule,
     MatButtonModule,
     HttpClientModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatFormFieldModule,
+    MatInputModule, 
+    FormsModule, MatTableModule, MatPaginatorModule, MatSortModule,
   ],
-  providers: [],
+  providers: [
+    
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

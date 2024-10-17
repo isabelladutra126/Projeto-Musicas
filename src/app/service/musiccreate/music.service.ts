@@ -20,8 +20,12 @@ export class MusicService {
       verticalPosition: 'top'
     })}
   
-  create(music: Music): Observable<Music>{
+  create(music: Music): Observable<Music> {
     return this.http.post<Music>(this.baseUrl, music)
+  }
+
+  read(): Observable<Music []> {
+    return this.http.get<Music []>(this.baseUrl)
   }
 
   }
