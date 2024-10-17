@@ -1,7 +1,7 @@
-export interface Musica {
-        id: number
-        nome: string
-        autor: string
-        genero: string
-        ano: number
+export interface Music {
+    id: number;
+    nome: string;
+    autor: string;
+    genero: string;
+    ano: number;
 }

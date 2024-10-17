@@ -15,7 +15,9 @@ import { ProdutosComponent } from './views/produtos/produtos.component';
 import { RedDirective } from './directives/red.directive';
 import { ForDirective } from './directives/for.directive';
 import { MatButtonModule } from '@angular/material/button';
-import { MusicCreateComponent } from './components/music-create/music-create.component'
+import { MusicCreateComponent } from './components/music-create/musics/music-create.component';
+import { HttpClientModule } from '@angular/common/http';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { MusicCreateComponent } from './components/music-create/music-create.com
     MatSidenavModule,
     MatListModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

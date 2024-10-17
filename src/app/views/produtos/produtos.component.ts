@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { MusicCreateComponent } from '../../components/music-create/music-create.component';
+import { MusicCreateComponent } from '../../components/music-create/musics/music-create.component';
 
 @Component({
   selector: 'app-produtos',
