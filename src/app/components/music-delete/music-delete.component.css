@@ -3,12 +3,14 @@ form {
     flex-direction: column;
 
 }
-a {
-    color: rgb(235, 123, 123);
-}
+
 .salvar {
     margin-top: 15px;
 }
 .cancelar{
     margin-left: 15px;
+}
+
+a{
+    color: rgb(207, 119, 134);
 }

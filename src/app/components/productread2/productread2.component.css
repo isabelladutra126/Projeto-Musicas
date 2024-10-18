@@ -1,3 +1,7 @@
 .full-width-table {
   width: 100%;
 }
+
+td:nth-child(3) {
+  padding-right: 50px;
+}

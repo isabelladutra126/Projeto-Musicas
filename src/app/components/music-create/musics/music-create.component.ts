@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MusicService } from 'src/app/service/musiccreate/music.service';
 import { Router } from '@angular/router';
 import { Music } from '../music.model';
-
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-music-create',
@@ -10,6 +10,9 @@ import { Music } from '../music.model';
   styleUrls: ['./music-create.component.css']
 })
 export class MusicCreateComponent implements OnInit {
+onSubmit() {
+throw new Error('Method not implemented.');
+}
 
   music: Music = {
     nome: '',
@@ -32,7 +35,7 @@ export class MusicCreateComponent implements OnInit {
   })
   }
 
-  
+
 
   cancel(): void {
     this.router.navigate(['/produtos'])

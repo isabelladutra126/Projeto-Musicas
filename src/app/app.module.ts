@@ -29,7 +29,8 @@ import { MatSortModule } from '@angular/material/sort';
 import { CapitalizeWordsPipe } from './capitalize-words.pipe';
 import { MusicUpdateComponent } from './components/music-update/music-update.component';
 import { MusicDeleteComponent } from './components/music-delete/music-delete.component';
-
+import { VideoModalComponent } from './video-modal/video-modal.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 
@@ -49,7 +50,8 @@ import { MusicDeleteComponent } from './components/music-delete/music-delete.com
     Productread2Component,
     CapitalizeWordsPipe,
     MusicUpdateComponent,
-    MusicDeleteComponent
+    MusicDeleteComponent,
+    VideoModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -64,6 +66,7 @@ import { MusicDeleteComponent } from './components/music-delete/music-delete.com
     MatSnackBarModule,
     MatFormFieldModule,
     MatInputModule, 
+    MatDialogModule,
     FormsModule, MatTableModule, MatPaginatorModule, MatSortModule,
   ],
   providers: [

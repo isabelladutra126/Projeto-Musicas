@@ -5,3 +5,7 @@ button{
     margin-top: 20px;
     margin-left: 45%;
 }
+
+table td:nth-child(4) {
+    padding-right: 50px;
+  }

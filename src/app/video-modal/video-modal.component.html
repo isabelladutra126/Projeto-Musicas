@@ -1,0 +1,13 @@
+<h2 mat-dialog-title>Ouvir música</h2>
+<mat-dialog-content>
+  <iframe
+    width="1000"
+    height="500"
+    [src]="videoUrl" 
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="onClose()">Fechar</button>
+</mat-dialog-actions>

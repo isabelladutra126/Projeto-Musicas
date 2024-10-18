@@ -1,27 +1,40 @@
 <mat-card>
     <mat-card-title>Música:</mat-card-title>
-    <form>
-        <mat-form-field>
-            <input matInput placeholder="Nome" 
-            [(ngModel)]="music.nome" name="nome">
-        </mat-form-field>
-        <mat-form-field>
-            <input matInput placeholder="Autor/Banda"
-            [(ngModel)]="music.autor" name="autor">
-        </mat-form-field>
-        <mat-form-field>
-            <input matInput placeholder="Gênero"
-            [(ngModel)]="music.genero" name="genero">
-        </mat-form-field>
-        <mat-form-field>
-            <input matInput placeholder="Link"
-            [(ngModel)]="music.link" name="link">
-        </mat-form-field>
+    <form #musicForm="ngForm" (ngSubmit)="onSubmit()">
+      <mat-form-field>
+        <input matInput placeholder="Nome" 
+        [(ngModel)]="music.nome" name="nome" required>
+        <mat-error *ngIf="musicForm.controls['nome']?.invalid && musicForm.controls['nome']?.touched">
+          O nome é obrigatório.
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Autor/Banda"
+        [(ngModel)]="music.autor" name="autor" required>
+        <mat-error *ngIf="musicForm.controls['autor']?.invalid && musicForm.controls['autor']?.touched">
+          O autor ou banda é obrigatório.
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Gênero"
+        [(ngModel)]="music.genero" name="genero" required>
+        <mat-error *ngIf="musicForm.controls['genero']?.invalid && musicForm.controls['genero']?.touched">
+          O gênero é obrigatório.
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Link" 
+        [(ngModel)]="music.link" name="link" required
+        pattern="https?://.+">
+      </mat-form-field>
     </form>
-</mat-card>
-<button class="salvar" mat-raised-button (click)="createMusic()">
-    Salvar
-</button>
-<button class="cancelar" mat-raised-button (click)="cancel()">
-    Cancelar
-</button>
+  
+    <!-- Botões fora do formulário -->
+    <button class="salvar" mat-raised-button (click)="createMusic()" [disabled]="musicForm.invalid">
+      Salvar
+    </button>
+    <button class="cancelar" mat-raised-button type="button" (click)="cancel()">
+      Cancelar
+    </button>
+  </mat-card>
+  
