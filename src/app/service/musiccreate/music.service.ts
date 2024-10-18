@@ -28,6 +28,24 @@ export class MusicService {
     return this.http.get<Music []>(this.baseUrl)
   }
 
+  
+  readbyId(id: string): Observable<Music> {
+    const url = `${this.baseUrl}/${id}`
+
+    return this.http.get<Music>(url)
+  }
+
+  update(music: Music): Observable<Music> {
+    const url = `${this.baseUrl}/${music.id}`
+    return this.http.put<Music>(url, music)
+  }
+
+
+  delete(id: string): Observable<Music> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.delete<Music>(url);
+  }
+
   }
 
  

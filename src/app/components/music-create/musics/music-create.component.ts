@@ -12,7 +12,6 @@ import { Music } from '../music.model';
 export class MusicCreateComponent implements OnInit {
 
   music: Music = {
-    id: '',
     nome: '',
     autor: '',
     genero: '',
@@ -32,6 +31,8 @@ export class MusicCreateComponent implements OnInit {
     this.router.navigate(['/produtos'])
   })
   }
+
+  
 
   cancel(): void {
     this.router.navigate(['/produtos'])

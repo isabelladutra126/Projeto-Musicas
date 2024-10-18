@@ -39,10 +39,10 @@
       <ng-container matColumnDef="action">
         <th mat-header-cell *matHeaderCellDef >Editar/Excluir</th>
         <td mat-cell *matCellDef="let row">
-            <a routerLink="/">
+            <a routerLink="/music/update/{{row.id}}">
                 <i class="material-icons edit">edit</i>
             </a>
-            <a routerLink="/">
+            <a routerLink="/music/delete/{{row.id}}">
                 <i class="material-icons delete">delete</i>
             </a>
         </td>

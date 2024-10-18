@@ -1,0 +1,14 @@
+
+
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.salvar {
+    margin-top: 15px;
+}
+.cancelar{
+    margin-left: 15px;
+}

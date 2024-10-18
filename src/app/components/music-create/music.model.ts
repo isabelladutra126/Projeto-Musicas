@@ -1,7 +1,8 @@
 export interface Music {
-    id: number | string;
+    id?: string;
     nome: string;
     autor: string;
     genero: string;
     link:  string;
 }
+

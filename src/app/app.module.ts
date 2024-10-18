@@ -27,6 +27,8 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { CapitalizeWordsPipe } from './capitalize-words.pipe';
+import { MusicUpdateComponent } from './components/music-update/music-update.component';
+import { MusicDeleteComponent } from './components/music-delete/music-delete.component';
 
 
 
@@ -45,7 +47,9 @@ import { CapitalizeWordsPipe } from './capitalize-words.pipe';
     MusicCreateComponent,
     MusicReadComponent,
     Productread2Component,
-    CapitalizeWordsPipe
+    CapitalizeWordsPipe,
+    MusicUpdateComponent,
+    MusicDeleteComponent
   ],
   imports: [
     BrowserModule,

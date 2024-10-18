@@ -1,0 +1,27 @@
+<mat-card>
+    <mat-card-title>Alterar música</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" 
+            [(ngModel)]="music.nome" name="nome">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Autor/Banda"
+            [(ngModel)]="music.autor" name="autor">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Gênero"
+            [(ngModel)]="music.genero" name="genero">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Link"
+            [(ngModel)]="music.link" name="link">
+        </mat-form-field>
+    </form>
+</mat-card>
+<button class="salvar" mat-raised-button (click)="updateMusic()">
+    Salvar
+</button>
+<button class="cancelar" mat-raised-button (click)="cancel()">
+    Cancelar
+</button>

@@ -1,25 +1,11 @@
 {
   "musicas": [
     {
-      "id": "5fc6",
-      "nome": "Buried Alive",
-      "autor": "Avenged Sevenfold",
-      "genero": "rock",
-      "link": "https://www.youtube.com/watch?v=imwmmv9r1oE"
-    },
-    {
-      "id": "",
-      "nome": "Master of Puppets",
-      "autor": "Metallica",
-      "genero": "Rock",
-      "link": "https://www.youtube.com/watch?v=E0ozmU9cJDg"
-    },
-    {
-      "id": "",
-      "nome": "JUST LIKE YOU",
-      "autor": "THREE DAYS GRACE",
-      "genero": "ROCK",
-      "link": "https://www.youtube.com/watch?v=04fQTmvFfGo"
+      "id": "1ec1",
+      "nome": "eee",
+      "autor": "eee",
+      "genero": "eeee",
+      "link": "eee"
     }
   ]
 }

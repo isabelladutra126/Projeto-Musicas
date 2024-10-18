@@ -21,16 +21,18 @@ table {
     background-color: #444;
     color: white;
   }
-  td:nth-child(3) {
+  td:nth-child(4) {
     padding-right: 50px;
   }
 
   i.edit{
     color:  #c96d7a;
+    margin-left: 5px;
   }
 
   i.delete{
     color:  #c96d7a;
+    margin-left: 10px;
   }
   
 
