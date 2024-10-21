@@ -4,7 +4,9 @@ import { MusicService } from 'src/app/service/musiccreate/music.service';
 import { MatDialog } from '@angular/material/dialog';
 import { MusicCreateComponent } from '../music-create/musics/music-create.component';
 import { VideoModalComponent } from 'src/app/video-modal/video-modal.component';
-import { HttpClient } from '@angular/common/http';
+import { MusicDeleteComponent } from '../music-delete/music-delete.component';
+import { MusicUpdateComponent } from '../music-update/music-update.component';
+
 
 @Component({
   selector: 'app-music-read',
@@ -21,10 +23,20 @@ export class MusicReadComponent implements OnInit {
     link:  '',
   };
 
-  constructor(private musicService: MusicService, private dialog: MatDialog) { }
+  constructor(
+    private musicService: MusicService, 
+    private dialog: MatDialog
+  ) { }
 
   ngOnInit(): void {
     this.getMusics();
+  }
+
+  editMusic(row : any): void{
+    this.dialog.open(MusicUpdateComponent, {
+      width: '500px',
+      data:row
+    })
   }
 
   addMusicCreate(): void {

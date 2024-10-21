@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MusicService } from 'src/app/service/musiccreate/music.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Music } from '../music-create/music.model';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-music-delete',
@@ -10,7 +11,12 @@ import { Music } from '../music-create/music.model';
 })
 export class MusicDeleteComponent implements OnInit {
 
-  constructor(private musicService: MusicService, private router: Router, private route: ActivatedRoute) { }
+  constructor(
+    private musicService: MusicService, 
+    private router: Router, 
+    private route: ActivatedRoute,
+    public dialogRef: MatDialogRef<MusicDeleteComponent>,
+    ) { }
 
   music: Music = {
     nome: '',
@@ -25,13 +31,11 @@ export class MusicDeleteComponent implements OnInit {
     this.musicService.readbyId(id!).subscribe(music => {this.music = music}); }
 
   cancel(): void{
-    this.router.navigate(['/produtos'])
+    this.dialogRef.close(false);
     }
 
   deleteMusic(): void {
-    this.musicService.delete(this.music?.id ?? '').subscribe(() => {
-      this.musicService.showMsg('Música excluída com sucesso!');
-      this.router.navigate(['/produtos']);
-      });
+    this.dialogRef.close(true);
+      }
+      ;
   }
-}

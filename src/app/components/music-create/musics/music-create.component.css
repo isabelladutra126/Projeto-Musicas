@@ -10,3 +10,7 @@ form {
 .cancelar{
     margin-left: 15px;
 }
+
+*{
+    background-color: rgb(110, 102, 104);
+}

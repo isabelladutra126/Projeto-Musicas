@@ -31,7 +31,7 @@ import { MusicUpdateComponent } from './components/music-update/music-update.com
 import { MusicDeleteComponent } from './components/music-delete/music-delete.component';
 import { VideoModalComponent } from './video-modal/video-modal.component';
 import { MatDialogModule } from '@angular/material/dialog';
-
+import {MatIconModule} from '@angular/material/icon';
 
 
 
@@ -67,6 +67,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatFormFieldModule,
     MatInputModule, 
     MatDialogModule,
+    MatIconModule,
     FormsModule, MatTableModule, MatPaginatorModule, MatSortModule,
   ],
   providers: [
