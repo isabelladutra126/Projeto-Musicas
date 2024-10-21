@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Music } from '../music-create/music.model';
 import { MusicService } from 'src/app/service/musiccreate/music.service';
 import { MatDialog } from '@angular/material/dialog';
+import { MusicCreateComponent } from '../music-create/musics/music-create.component';
 import { VideoModalComponent } from 'src/app/video-modal/video-modal.component';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-music-read',
@@ -12,15 +14,36 @@ import { VideoModalComponent } from 'src/app/video-modal/video-modal.component';
 export class MusicReadComponent implements OnInit {
   musics: Music[] = [];
   displayedColumns = ['nome', 'autor', 'genero', 'link', 'action'];
+  newMusic: Music = {
+    nome: '',
+    autor: '',
+    genero: '',
+    link:  '',
+  };
 
   constructor(private musicService: MusicService, private dialog: MatDialog) { }
 
   ngOnInit(): void {
-    this.musicService.read().subscribe(musics => {
-      this.musics = musics;
-      console.log(musics);
+    this.getMusics();
+  }
+
+  addMusicCreate(): void {
+    const dialogRef = this.dialog.open(MusicCreateComponent, {
+      width: '500px',
+    });
+
+    dialogRef.afterClosed().subscribe((newMusic) => {
+      this.getMusics();
     });
   }
+
+  getMusics(): void{
+    this.musicService.read().subscribe(musics => {
+      this.musics = musics;
+    });
+  }
+
+
 
   openVideoModal(videoUrl: string): void {
     const videoId = this.getYouTubeVideoId(videoUrl);
