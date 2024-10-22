@@ -32,11 +32,26 @@ export class MusicReadComponent implements OnInit {
     this.getMusics();
   }
 
+  deleteMusic(row: any): void {
+    const dialogRef = this.dialog.open(MusicDeleteComponent, {
+      width: '500px',
+      data: row
+    });
+  
+    dialogRef.afterClosed().subscribe(result => {
+        this.getMusics();
+    });
+  }
+  
+
   editMusic(row : any): void{
-    this.dialog.open(MusicUpdateComponent, {
+    const dialogRef = this.dialog.open(MusicUpdateComponent, {
       width: '500px',
       data:row
-    })
+    });
+    dialogRef.afterClosed().subscribe(() => {
+      this.getMusics();
+    });
   }
 
   addMusicCreate(): void {
@@ -44,7 +59,7 @@ export class MusicReadComponent implements OnInit {
       width: '500px',
     });
 
-    dialogRef.afterClosed().subscribe((newMusic) => {
+    dialogRef.afterClosed().subscribe(() => {
       this.getMusics();
     });
   }
@@ -54,7 +69,6 @@ export class MusicReadComponent implements OnInit {
       this.musics = musics;
     });
   }
-
 
 
   openVideoModal(videoUrl: string): void {

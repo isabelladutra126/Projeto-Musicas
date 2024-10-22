@@ -3,23 +3,23 @@
     <form aria-disabled="true">
         <mat-form-field>
             <input matInput placeholder="Nome" 
-            [(ngModel)]="music.nome" name="nome">
+            [(ngModel)]="music.nome" name="nome" disabled>
         </mat-form-field>
         <mat-form-field>
             <input matInput placeholder="Autor/Banda"
-            [(ngModel)]="music.autor" name="autor">
+            [(ngModel)]="music.autor" name="autor" disabled>
         </mat-form-field>
         <mat-form-field>
             <input matInput placeholder="Gênero"
-            [(ngModel)]="music.genero" name="genero">
+            [(ngModel)]="music.genero" name="genero" disabled>
         </mat-form-field>
         <mat-form-field>
             <input matInput placeholder="Link"
-            [(ngModel)]="music.link" name="link">
+            [(ngModel)]="music.link" name="link" disabled>
         </mat-form-field>
     </form>
 </mat-card>
-<button class="salvar" mat-raised-button (click)="deleteMusic()">Continuar mesmo assim</button>
+<button class="salvar" mat-raised-button (click)="delete()">Continuar mesmo assim</button>
 
 <button class="cancelar" mat-raised-button (click)="cancel()">
     Cancelar

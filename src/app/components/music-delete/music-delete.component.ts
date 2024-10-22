@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { MusicService } from 'src/app/service/musiccreate/music.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Music } from '../music-create/music.model';
@@ -12,30 +12,49 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 export class MusicDeleteComponent implements OnInit {
 
   constructor(
-    private musicService: MusicService, 
-    private router: Router, 
-    private route: ActivatedRoute,
-    public dialogRef: MatDialogRef<MusicDeleteComponent>,
+  private musicService: MusicService, 
+  private router: Router, 
+  private route: ActivatedRoute,
+  @Inject(MAT_DIALOG_DATA) public removeData: any,
+  public dialogRef: MatDialogRef<MusicDeleteComponent>,
+
     ) { }
 
+  musics: Music[] = [];
   music: Music = {
     nome: '',
     autor: '',
     genero: '',
     link:  '',
   }
-
   
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id')
-    this.musicService.readbyId(id!).subscribe(music => {this.music = music}); }
+    if (this.removeData) {
+      // Preenche os dados de remover
+      this.music.id = this.removeData.id;
+      this.music.nome = this.removeData.nome;
+      this.music.autor = this.removeData.autor;
+      this.music.genero = this.removeData.genero;
+      this.music.link = this.removeData.link;
+    }
+  }
 
   cancel(): void{
-    this.dialogRef.close(false);
-    }
-
-  deleteMusic(): void {
-    this.dialogRef.close(true);
-      }
-      ;
+      this.dialogRef.close();
   }
+  delete() {
+      if (this.music.id) { // Supondo que você tenha um ID para a música que deseja excluir
+        this.musicService.deleteMusic(this.music.id).subscribe(
+          response => {
+            this.dialogRef.close(response); // Fecha o diálogo e envia a resposta
+            this.musicService.showMsg('Música excluída com sucesso!');
+          },
+          
+        );
+    }
+  }
+  
+
+  }
+
+

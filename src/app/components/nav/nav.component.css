@@ -1,19 +1,13 @@
-.sidenav {
-    background-color: #c96d7a;
+.sidenav{
+    background-color: #d86692
+    
 }
 
-.sidenav a{
-    color: white;
 
-}
+
 
 .sidenav i {
     padding-left: 15px;
-}
-
-.content {
-    padding: 15px;
-    background-color: white;
 }
 
 .nav-list i {

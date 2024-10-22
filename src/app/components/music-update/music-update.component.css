@@ -1,5 +1,8 @@
 
+*{
 
+    background-color:  #e0afaf;
+}
 form {
     display: flex;
     flex-direction: column;
@@ -8,7 +11,9 @@ form {
 
 .salvar {
     margin-top: 15px;
+    background-color: rgb(241, 139, 156);
 }
 .cancelar{
     margin-left: 15px;
+    background-color: rgb(255, 0, 0);
 }

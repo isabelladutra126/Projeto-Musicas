@@ -2,6 +2,7 @@
     font-size: 3rem;
     font-weight: 300;
     line-height: 1.2;
+    
 }
 
 .home .subtitle{
@@ -9,5 +10,12 @@
     
 }
 #card{ 
-    background-color:  #c96d7a;
+    background-color:  #d86692;
+}
+
+*{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+
 }

@@ -1,3 +1,8 @@
+
+*{
+
+    background-color:  #e0afaf;
+}
 form {
     display: flex;
     flex-direction: column;
@@ -6,11 +11,16 @@ form {
 
 .salvar {
     margin-top: 15px;
+    background-color: rgb(241, 139, 156);
 }
 .cancelar{
     margin-left: 15px;
+    background-color: rgb(255, 0, 0);
 }
 
-a{
-    color: rgb(207, 119, 134);
-}
+input[disabled], textarea[disabled], select[disabled] {
+    background-color: #e0afaf; /* Mantém o fundo branco */
+    color: #000;            /* Mantém o texto preto */
+    opacity: 1;             /* Remove a opacidade padrão */
+    cursor: not-allowed;    /* Mostra o cursor "não permitido" */
+  }

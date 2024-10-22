@@ -1,34 +1,6 @@
 {
   "musicas": [
     {
-      "id": "3e72",
-      "nome": "Buried Alive",
-      "autor": "Avenged Sevenfold",
-      "genero": "Rock",
-      "link": "https://www.youtube.com/watch?v=imwmmv9r1oE"
-    },
-    {
-      "id": "f53d",
-      "nome": "Nothing else matters",
-      "autor": "metallica",
-      "genero": "rock",
-      "link": "https://www.youtube.com/watch?v=tAGnKpE4NCI"
-    },
-    {
-      "id": "e4f1",
-      "nome": "Buried Alive",
-      "autor": "asasas",
-      "genero": "Rock",
-      "link": "https://www.youtube.com/watch?v=imwmmv9r1oE"
-    },
-    {
-      "id": "c8a7",
-      "nome": "Buried Alive",
-      "autor": "asasas",
-      "genero": "Rock",
-      "link": "https://www.youtube.com/watch?v=imwmmv9r1oE"
-    },
-    {
       "id": "5e90",
       "nome": "asasas",
       "autor": "assasaas",
@@ -36,31 +8,31 @@
       "link": "https://www.youtube.com/watch?v=imwmmv9r1oE"
     },
     {
-      "id": "fdef",
-      "nome": "eee",
-      "autor": "asasas",
-      "genero": "Rock",
-      "link": "https://www.youtube.com/watch?v=imwmmv9r1oE"
-    },
-    {
-      "id": "24c0",
-      "nome": "dssda",
-      "autor": "assa",
-      "genero": "Rock",
-      "link": "https://www.youtube.com/watch?v=imwmmv9r1oE"
-    },
-    {
-      "id": "d685",
-      "nome": "sasa",
-      "autor": "asasas",
-      "genero": "Rock",
-      "link": "https://www.youtube.com/watch?v=E0ozmU9cJDg"
-    },
-    {
       "id": "d5a7",
       "nome": "sssssssss",
       "autor": "sssssssss",
       "genero": "ssssssssss",
+      "link": "https://www.youtube.com/watch?v=imwmmv9r1oE"
+    },
+    {
+      "id": "585b",
+      "nome": "oi",
+      "autor": "oi",
+      "genero": "oi",
+      "link": "https://www.youtube.com/watch?v=04fQTmvFfGo"
+    },
+    {
+      "id": "b52a",
+      "nome": "oi",
+      "autor": "oi",
+      "genero": "oi",
+      "link": "https://www.youtube.com/watch?v=imwmmv9r1oE"
+    },
+    {
+      "id": "c38b",
+      "nome": "a",
+      "autor": "a",
+      "genero": "a",
       "link": "https://www.youtube.com/watch?v=imwmmv9r1oE"
     }
   ]

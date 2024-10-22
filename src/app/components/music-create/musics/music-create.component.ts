@@ -3,7 +3,6 @@ import { Component, Inject, OnInit } from '@angular/core';
 import { MusicService } from 'src/app/service/musiccreate/music.service';
 import { Router } from '@angular/router';
 import { Music } from '../music.model';
-import { NgForm } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
@@ -31,6 +30,8 @@ export class MusicCreateComponent implements OnInit {
 
   ngOnInit(): void {}
 
+
+  editMusic(row: any){}
   
 
   createMusic(): void {
