@@ -5,7 +5,9 @@
 
 
 
-
+.sidenav a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 .sidenav i {
     padding-left: 15px;
 }
